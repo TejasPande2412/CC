@@ -5,7 +5,7 @@ public class StudentController {
 
     // Constructor to initialize the students list and new student record
     public StudentController() {
-        students = [SELECT Id, Name, Age_c, Gradec FROM Student_c LIMIT 10]; // Fetches students from Salesforce
+        students = [SELECT Id, Name, Age__c, Grade__c FROM Student__c LIMIT 10]; // Fetches students from Salesforce
         newStudent = new Student__c(); // Empty student record for input form
     }
 
